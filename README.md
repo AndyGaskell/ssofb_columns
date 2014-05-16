@@ -7,6 +7,8 @@ This is a very simple bootrap column plug-in. It suports Bootstrap fluid respons
 
 At the relevant viewport, typically 768 pixels wide, the columns will switch from being side-by-side to being on-top of each other.
 
+This plug-in supports 2, 3, 4, 6 or 12 columns, as per the bootstrap 12 grid system
+
 To use it, just use the following syntax in your article:
 
     {cols}
