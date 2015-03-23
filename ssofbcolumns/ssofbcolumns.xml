@@ -11,8 +11,14 @@
     <description><![CDATA[<h2>SSOFB Columns</h2>
     <p>This is a very simple bootrap column plug-in. It suports Bootstrap fluid responsive layout.  It assumes you have a bootstrap template, like Protostar.</p>
     <p>At the relevant viewport, typically 768 pixels wide, the columns will switch from being side-by-side to being on-top of each other.</p>
-    <p>This plug-in supports 2, 3, 4, 6 or 12 columns, as per the bootstrap 12 grid system</p>
-    <p>To use it, just use the following syntax in your article:</p>
+    <p>Primary syntax, this plug-in supports 2, 3, 4, 6 or 12 columns, as per the bootstrap 12 grid system</p>
+    <p>Seconday syntax, by placing {split} in your content the text prior with be put in a span8 div whilst the text after will be put in a span4 div.</p>
+    <p>Tertiary syntax, by placing {splitleft} in your content the text prior with be put in a span4 div whilst the text after will be put in a span8 div.</p>
+    <p>These syntaxes cannot be used together.</p>
+    
+    <p>To use it, just use the following syntaxes in your articles:</p>
+    
+    <p>Primary syntax:</p>  
     <pre>
     {cols}
     This is my first column, as much text as you like here. 
@@ -22,6 +28,21 @@
     This is my third column, content can be whatever. 
     {/cols} 
     </pre>
+
+    <p>Secondary syntax:</p>      
+    <pre>
+    This is my first column, it'll be span8 blah blah 
+    {split}
+    This is my second column, it'll be span4 blah blah 
+    </pre>    
+
+    <p>Tertiary syntax:</p>          
+    <pre>
+    This is my first column, it'll be span4 blah blah 
+    {splitleft}
+    This is my second column, it'll be span8 blah blah 
+    </pre>            
+    
     The code is in GitHub at https://github.com/AndyGaskell/ssofb_columns
     ]]></description>
     <scriptfile>ssofbcolumns.php</scriptfile>
@@ -33,8 +54,4 @@
         <filename plugin="ssofbcolumns">ssofbcolumns.php</filename>
         <filename plugin="ssofbcolumns">index.html</filename>		
     </files>
-    <languages folder="language/en-GB/">
-        <language tag="en-GB">en-GB.plg_content_ssofbcolumns.ini</language>
-        <language tag="en-GB">en-GB.plg_content_ssofbcolumns.sys.ini</language>
-    </languages>
 </extension>
